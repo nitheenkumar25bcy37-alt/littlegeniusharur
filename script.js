@@ -159,3 +159,31 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initPage();
 });
+function sendToWhatsApp() {
+  const parentName     = document.getElementById('parentName').value.trim();
+  const phoneNumber    = document.getElementById('phoneNumber').value.trim();
+  const childName      = document.getElementById('childName').value.trim();
+  const childAge       = document.getElementById('childAge').value.trim();
+  const classInterested = document.getElementById('classInterested').value;
+  const message        = document.getElementById('message').value.trim();
+
+  // Basic validation
+  if (!parentName || !phoneNumber) {
+    alert('Please fill in your name and phone number.');
+    return;
+  }
+
+  // Build the WhatsApp message
+  const text = `Hello Little Genius Preschool! 👋
+
+*Parent Name:* ${parentName}
+*Phone:* ${phoneNumber}
+*Child's Name:* ${childName || 'Not provided'}
+*Child's Age:* ${childAge ? childAge + ' years' : 'Not provided'}
+*Class Interested:* ${classInterested || 'Not selected'}
+*Message:* ${message || 'No additional message'}`;
+
+  // Open WhatsApp with pre-filled message
+  const encodedText = encodeURIComponent(text);
+  window.open(`https://wa.me/919940382901?text=${encodedText}`, '_blank');
+}
