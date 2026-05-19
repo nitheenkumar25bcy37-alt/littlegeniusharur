@@ -870,7 +870,7 @@ footer {
 .counters { background: linear-gradient(135deg, var(--gold), #d48a10); }
 
 .counters-inner {
-  max-width: 1240px; margin: 0 auto;
+  max-width: 1840px; margin: 0 auto;
   padding: 4rem 2rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
