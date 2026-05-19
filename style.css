@@ -397,19 +397,33 @@ section { padding: 90px 2rem; }
 
 .principal-name-box {
   position: absolute;
-  bottom: 1.5rem; left: 50%; transform: translateX(-50%);
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
   background: rgba(255,255,255,0.95);
   border-radius: 12px;
-  padding: 12px 24px;
+  padding: 8px 20px; /* reduced padding */
   text-align: center;
   z-index: 1;
   white-space: nowrap;
   box-shadow: var(--shadow-md);
+  line-height: 1.2; /* tighter spacing */
 }
 
-.principal-name-box strong { display: block; color: var(--navy); font-size: 15px; font-weight: 600; }
-.principal-name-box span { font-size: 12px; color: var(--text-muted); }
+.principal-name-box strong {
+  display: block;
+  color: var(--navy);
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 2px; /* reduces gap */
+}
 
+.principal-name-box span {
+  font-size: 12px;
+  color: var(--text-muted);
+  display: block;
+  margin-top: 0;
+}
 .accent-box {
   position: absolute;
   top: -20px; right: -20px;
