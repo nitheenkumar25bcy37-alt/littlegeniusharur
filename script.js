@@ -174,7 +174,7 @@ function sendToWhatsApp() {
   }
 
   // Build the WhatsApp message
-  const text = `Hello Little Genius Preschool! 👋
+  const text = `Hello Little Genius School! 👋
 
 *Parent Name:* ${parentName}
 *Phone:* ${phoneNumber}
