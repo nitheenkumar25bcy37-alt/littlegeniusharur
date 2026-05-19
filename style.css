@@ -999,3 +999,30 @@ footer {
 .news-card h3 { font-size: 1rem; font-weight: 600; color: var(--navy); line-height: 1.5; margin-bottom: 0.5rem; }
 .news-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
 .news-date { font-size: 12px; color: var(--text-muted); margin-top: 1rem; }
+/* Send Message Button */
+#sendBtn {
+  width: 100%;
+  padding: 18px 32px;
+  background: #f5a623;
+  color: #0d1b3e;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 16px;
+}
+
+#sendBtn:hover {
+  background: #e8921a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(245, 166, 35, 0.4);
+}
+
+#sendBtn:active {
+  transform: translateY(0px);
+  box-shadow: none;
+}
