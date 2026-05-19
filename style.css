@@ -882,16 +882,15 @@ footer {
 
 /* ── COUNTERS ── */
 .counters { background: linear-gradient(135deg, var(--gold), #d48a10); }
-
 .counters-inner {
   max-width: 1840px; margin: 0 auto;
   padding: 4rem 2rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  display: flex;           /* ← changed from grid */
+  justify-content: center; /* ← centers items horizontally */
+  align-items: center;
+  gap: 6rem;               /* ← increased gap (was 2rem) */
   text-align: center;
 }
-
 .counter-item .num { font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 800; color: var(--navy); }
 .counter-item .label { font-size: 14px; font-weight: 600; color: rgba(10,31,68,0.75); margin-top: 0.25rem; text-transform: uppercase; letter-spacing: 0.06em; }
 
