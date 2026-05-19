@@ -1,0 +1,65 @@
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <div class="section-label">Photo Gallery</div>
+      <h2 class="section-title">Life at <em>Little Genius</em></h2>
+    </div>
+
+    <div class="gallery-tabs">
+      <button class="tab-btn active" onclick="filterGallery('all', this)">All</button>
+      <button class="tab-btn" onclick="filterGallery('campus', this)">Campus</button>
+      <button class="tab-btn" onclick="filterGallery('events', this)">Events</button>
+      <button class="tab-btn" onclick="filterGallery('sports', this)">Sports Day</button>
+      <button class="tab-btn" onclick="filterGallery('cultural', this)">Cultural</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item tall" data-cat="campus">
+        <div class="gallery-placeholder fc-blue" style="min-height:400px;">
+          <span>🏫</span><span>School Campus</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="events">
+        <div class="gallery-placeholder fc-gold">
+          <span>🎉</span><span>Annual Day</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="sports">
+        <div class="gallery-placeholder fc-green">
+          <span>⚽</span><span>Sports Day</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="cultural">
+        <div class="gallery-placeholder fc-pink">
+          <span>🎭</span><span>Cultural Programme</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="campus">
+        <div class="gallery-placeholder fc-teal">
+          <span>📚</span><span>Classroom</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="events">
+        <div class="gallery-placeholder fc-purple">
+          <span>🏆</span><span>Prize Distribution</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="cultural">
+        <div class="gallery-placeholder fc-gold" style="background:linear-gradient(135deg,#FAEEDA,#FAC775);">
+          <span>💃</span><span>Dance Performance</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="sports">
+        <div class="gallery-placeholder fc-green">
+          <span>🏃</span><span>Athletics</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="campus">
+        <div class="gallery-placeholder fc-blue">
+          <span>🌿</span><span>Playground</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
