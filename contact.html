@@ -51,38 +51,37 @@
         <div class="form-row">
           <div class="form-group">
             <label>Parent Name *</label>
-            <input type="text" placeholder="Your full name">
+            <input type="text" id="parentName" placeholder="Your full name">
           </div>
           <div class="form-group">
             <label>Phone Number *</label>
-            <input type="tel" placeholder="+91 00000 00000">
+            <input type="tel" id="phoneNumber" placeholder="+91 00000 00000">
           </div>
         </div>
         <div class="form-group">
           <label>Child's Name</label>
-          <input type="text" placeholder="Your child's name">
+          <input type="text" id="childName" placeholder="Your child's name">
         </div>
         <div class="form-row">
           <div class="form-group">
             <label>Child's Age</label>
-            <input type="number" placeholder="Age in years" min="1" max="6">
+            <input type="number" id="childAge" placeholder="Age in years" min="1" max="6">
           </div>
           <div class="form-group">
             <label>Class Interested In</label>
-            <select>
-              <option value="">Select class</option>
-              <option>Playgroup (1.5–2.5 yrs)</option>
-              <option>Nursery (2.5–3.5 yrs)</option>
-              <option>LKG (3.5–4.5 yrs)</option>
-              <option>UKG (4.5–5.5 yrs)</option>
+            <select id="classInterested">
+                    <option value="">Select class</option>
+                    <option value="Nursery">Nursery</option>
+                    <option value="LKG">LKG</option>
+                    <option value="UKG">UKG</option>
             </select>
           </div>
         </div>
         <div class="form-group">
           <label>Message</label>
-          <textarea placeholder="Any questions, special requirements or how you heard about us..."></textarea>
+          <textarea id = "message" placeholder="Any questions, special requirements or how you heard about us..."></textarea>
         </div>
-        <button class="btn-submit" onclick="handleSubmit(this)">Send Message ›</button>
+       <button type="button" id="sendBtn" onclick="sendToWhatsApp()">Send Message </button>
       </div>
     </div>
   </div>
